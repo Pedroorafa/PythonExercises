@@ -9,3 +9,8 @@ print(f'Os 5 primeiros colocados são {times[0:5]}')
 print(f'Os quatro ultimos colocados foram {times[-4:]}')
 print('Segue a baixo a lista em ordem alfabética: ')
 print(sorted(times))
+if 'chapecoense' in times:
+    print(f'Chapecoense se encontra na colocação {times.index("Chapecoense")+1} do Campeonato')
+else:
+    print('Chapecoense não esta entre os 20 primeiros')
+
