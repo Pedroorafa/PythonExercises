@@ -1,8 +1,9 @@
-lista = list()
-for c in range(0, 9):
-    n = int(input('Digite um número: '))
-    lista.append(n)
-print('-='*40)
-print(f'[ {lista[0]} ][ {lista[1]} ][ {lista[2]} ]')
-print(f'[ {lista[3]} ][ {lista[4]} ][ {lista[5]} ]')
-print(f'[ {lista[6]} ][ {lista[7]} ][ {lista[8]} ]')
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
+print('-='*30)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end='')
+    print()
