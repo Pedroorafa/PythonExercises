@@ -1,8 +1,7 @@
 from random import randint
 lista = dict()
-listagem = list()
 for c in range(0, 4):
-    lista['Nome'] = str(f'Jogador {c+1}')
-    lista['Dados'] = int(randint(0, 6))
-    listagem.append(lista.copy())
-print(listagem)
+    lista[f'Jogador{c+1}'] = int(randint(0, 6))
+for k, v in lista.items():
+    print(f'{k} tirou {v}')
+print('RANKING DOS JOGADORES')
