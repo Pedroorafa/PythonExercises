@@ -8,7 +8,7 @@ while True:
         break
     cadastro['Contratação'] = int(input('Digite o ano da sua contratação: '))
     cadastro['Salario'] = int(input('Digite o seu salário: '))
-    cadastro['Aposentadoria'] = cadastro['Idade'] + 35
+    cadastro['Aposentadoria'] = cadastro['Idade'] + ((cadastro['Contratação'] + 35) - date.today().year)
     break
 print('-*'*10)
 for k, v in cadastro.items():
