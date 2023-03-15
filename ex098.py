@@ -3,7 +3,7 @@ def contador(a, b, c):
     if c == 0:
         c = 1
     if c < 0:
-        c = c * -1
+        c *= -1
     print('-=' * 20)
     print(f'Contagem de {a} até {b} de {c} em {c}')
     print('-=' * 20)
